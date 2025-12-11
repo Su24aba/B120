@@ -1,0 +1,49 @@
+===== CHILD POVERTY THRESHOLD =====
+Median Poverty.Percent..Age.0.4: 20.1 
+
+===== GROUP SUMMARY =====
+# A tibble: 2 × 5
+  ChildPovGroup          n mean_income sd_income median_income
+  <chr>              <int>       <dbl>     <dbl>         <dbl>
+1 High child poverty    25      52518.     7572.         51713
+2 Low child poverty     27      63376.     8465.         61898
+
+===== SHAPIRO-WILK TESTS =====
+# A tibble: 2 × 2
+  ChildPovGroup      shapiro_p
+  <chr>                  <dbl>
+1 High child poverty    0.0451
+2 Low child poverty     0.119 
+
+===== T-TEST RESULT =====
+
+	Welch Two Sample t-test
+
+data:  group_high and group_low
+t = -4.8813, df = 49.946, p-value = 1.121e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -15324.912  -6389.553
+sample estimates:
+mean of x mean of y 
+ 52518.36  63375.59 
+
+
+===== MANN-WHITNEY (ROBUST CHECK) =====
+
+	Wilcoxon rank sum exact test
+
+data:  group_high and group_low
+W = 104, p-value = 6.531e-06
+alternative hypothesis: true location shift is not equal to 0
+
+
+===== COHEN'S D EFFECT SIZE =====
+
+Hedges's g
+
+g estimate: -1.3286 (large)
+95 percent confidence interval:
+     lower      upper 
+-1.9351607 -0.7220389 
+
