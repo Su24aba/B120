@@ -1,4 +1,4 @@
-===== CHILD POVERTY THRESHOLD =====
+===== CHILD POVERTY_THRESHOLD =====
 Median Poverty.Percent..Age.0.4: 20.1 
 
 ===== GROUP SUMMARY =====
@@ -46,4 +46,5 @@ g estimate: -1.3286 (large)
 95 percent confidence interval:
      lower      upper 
 -1.9351607 -0.7220389 
+
 
